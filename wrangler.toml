@@ -6,3 +6,4 @@ workers_dev = true
 [assets]
 directory = "docs/.vitepress/dist"
 binding = "ASSETS"
+
