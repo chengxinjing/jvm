@@ -17,15 +17,20 @@
     "url": "https://github.com/doocs/jvm/issues"
   },
   "homepage": "https://jvm.doocs.org",
+  "engines": {
+    "node": ">=22.12.0"
+  },
   "devDependencies": {
-    "vitepress": "^2.0.0-alpha.17",
-    "wrangler": "^4.97.0"
+    "typescript": "^7.0.2",
+    "vitepress": "2.0.0-alpha.20",
+    "wrangler": "4.134.0"
   },
   "scripts": {
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs",
+    "cf:types": "wrangler types",
     "deploy:cf": "pnpm run docs:build && wrangler deploy"
   },
-  "packageManager": "pnpm@10.33.0"
+  "packageManager": "pnpm@10.34.5"
 }
